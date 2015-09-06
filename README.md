@@ -48,6 +48,7 @@ b = B(h,w);                 => b
 
 # Experiments
 * Complete flip.m (30%) and rotation.m code (30%).
+* Due: 11/2 at 8am
 
 ## Extra Points
 * +2 pts: If you make your code publicly available.
@@ -61,7 +62,7 @@ For this project, and all other projects, you must do a project report in result
 * +30 pts: Working implementation of flip.m
 * +30 pts: Working implementation of rotation.m
 * +40 pts: Writeup with several examples of image images. Each result shall include two images. One image is given by TA, and the other one is your own image.
-* +10 pts: Extra credit (up to ten points)
+* +5 pts: Extra credit (up to ten points)
 * -5*n pts: Lose 5 points for every time (after the first) you do not follow the instructions for the hand in format
 
 # Noted
