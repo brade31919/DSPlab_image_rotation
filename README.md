@@ -35,22 +35,42 @@ b = B(h,w);                 => b
 ```
 
 <center>
-<img src="./data/Im.jpg" width="310" height="261">
-<img src="./data/corner.png" width="310" height="261">
+<img src="./files/fig1.png" width="510">
+<br>
+<img src="./files/fig2.png" width="510">
+<br>
+<img src="./files/fig3.png" width="510">
+<br>
+<img src="./files/fig4.png" width="510">
 <br>
 (Left: originla image. Right: image overlap with corners.)
 </center>
 
 # Experiments
-
 * Complete flip.m (30%) and rotation.m code (30%).
-* Write a report to show your pre-lab and homework results (40%). Each result shall include two images. One image is given by TA, and the other one is your own image.
-* Upload your “code” and “report” to iLMS. File name: “100xxxxx王小明_lab5”.
-* Deadline: 10/20(一) 08:00
+
+## Extra Points
+* +2 pts: If you make your code publicly available.
+* +2 pts: If you comment on pull request from students who fork the homework. <del>Make sure you send me a screenshot of the comments to me.</del> We can follow your discussion ourselves.
+* Other things that impress me.
+
+## Writeup
+For this project, and all other projects, you must do a project report in results folder using [Markdown](https://help.github.com/articles/markdown-basics). We provide you with a placeholder [index.md](./results/index.md) document which you can edit. In the report you will describe your algorithm and any decisions you made to write your algorithm a particular way. Then, you will describe how to run your code and if your code depended on other packages. Finally, you will show and discuss the results of your algorithm. In the case of this project, show the results of your filtering algorithm (the test script saves such images already) and show some of the intermediate images in the hybrid image pipeline (e.g. the low and high frequency images, which the starter code already saves for you). Also, discuss anything extra you did. Feel free to add any other information you feel is relevant.
+
+## Rubric
+* +30 pts: Working implementation of flip.m
+* +30 pts: Working implementation of rotation.m
+* +40 pts: Writeup with several examples of image images. Each result shall include two images. One image is given by TA, and the other one is your own image.
+* +10 pts: Extra credit (up to ten points)
+* -5*n pts: Lose 5 points for every time (after the first) you do not follow the instructions for the hand in format
 
 # Noted
 * Some Matlab functions are not allowed to use , e.g. rgb2gray().
 * Code with ”%%%” is where you need to write by yourself.
+
+## Credits
+	Assignment modified by Min Sun based on Prof. Huang's lab0 in 2014 
+
 
 
 
