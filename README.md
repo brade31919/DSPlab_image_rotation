@@ -34,6 +34,13 @@ b = B(h,w);                 => b
 
 ```
 
+<center>
+<img src="./data/Im.jpg" width="310" height="261">
+<img src="./data/corner.png" width="310" height="261">
+<br>
+(Left: originla image. Right: image overlap with corners.)
+</center>
+
 # Experiments
 
 * Complete flip.m (30%) and rotation.m code (30%).
