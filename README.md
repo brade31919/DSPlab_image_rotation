@@ -51,7 +51,6 @@ b = B(h,w);                 => b
 
 # Experiments
 * Complete flip.m (30%) and rotation.m code (30%).
-* Due: 11/2 at 8am
 
 ## Extra Points
 * +2 pts: If you make your code publicly available.
