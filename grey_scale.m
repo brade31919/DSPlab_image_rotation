@@ -41,17 +41,8 @@ B = I(:,:,3);
 [height, width, channel] = size(I);
 
 % initial intensity array Y using zeros()
-Y = zeros(height, width);
-
 % weight of rgb channel
-matrix = [0.299 0.587 0.114];
-
-for h = 1 : height
-    for w = 1 : width 
-        Y(h, w) = matrix * [double(R(h, w)) ; double(G(h, w)) ; double(B(h, w))] / 255;
-    end
-end
-
+Y = (double(R)*0.299 + double(G)*0.587 + double(B)*0.114)/255;
 % save intensity Y to output image
 I_grey(:,:,1) = Y;
 I_grey(:,:,2) = Y;

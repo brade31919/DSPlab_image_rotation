@@ -15,31 +15,61 @@ B = I(:,:,3);
 %%  horizontal flipping
 if type==0
     % initial r,g,b array for flipped image, using zeros()
-    %%% R_flip = 
-    %%% G_flip = 
-    %%% B_flip = 
+    R_flip = zeros(height,width); 
+    G_flip = zeros(height,width);
+    B_flip = zeros(height,width);
     
     % assign pixels from R,G,B to R_flip, G_flip, B_flip
    for h = 1 : height
        for w = 1 : width 
-            %%% R_flip(h, w) = 
-            %%% G_flip(h, w) = 
-            %%% B_flip(h, w) = 
+            R_flip(h, w) =R(h, width-w+1); 
+            G_flip(h, w) =G(h, width-w+1);
+            B_flip(h, w) =B(h, width-w+1);
        end
     end
     
     % save R_flip, G_flip, B_flip to output image
-    %%% I_flip(:,:,1) = 
-    %%% I_flip(:,:,2) = 
-    %%% I_flip(:,:,3) = 
+    I_flip(:,:,1) = R_flip/255; 
+    I_flip(:,:,2) = G_flip/255;
+    I_flip(:,:,3) = B_flip/255;
 end
 
 %% vertical flipping
 if type==1
-%%% ...
+    R_flip = zeros(height,width); 
+    G_flip = zeros(height,width);
+    B_flip = zeros(height,width);
+    
+    for h = 1 : height
+       for w = 1 : width 
+            R_flip(h, w) =R(height-h+1, w); 
+            G_flip(h, w) =G(height-h+1, w);
+            B_flip(h, w) =B(height-h+1, w);
+       end
+    end
+    
+    I_flip(:,:,1) =R_flip/255; 
+    I_flip(:,:,2) =G_flip/255;
+    I_flip(:,:,3) =B_flip/255;
+
 end
 
 %%  horizontal + vertical flipping
 if type==2
 %%% ...
+R_flip = zeros(height,width); 
+    G_flip = zeros(height,width);
+    B_flip = zeros(height,width);
+    
+    for h = 1 : height
+       for w = 1 : width 
+            R_flip(h, w) =R(height-h+1, width-w+1); 
+            G_flip(h, w) =G(height-h+1, width-w+1);
+            B_flip(h, w) =B(height-h+1, width-w+1);
+       end
+    end
+    
+    I_flip(:,:,1) =R_flip/255; 
+    I_flip(:,:,2) =G_flip/255;
+    I_flip(:,:,3) =B_flip/255;
 end
