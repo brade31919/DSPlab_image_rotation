@@ -43,11 +43,11 @@
 	* Then, we iterate through the whole image and assign each pixel to the correct location:
 		```
 		for h = 1 : height
-       for w = 1 : width
-            R_flip(h, w) =R(h, width-w+1);
-            G_flip(h, w) =G(h, width-w+1);
-            B_flip(h, w) =B(h, width-w+1);
-       end
+       	for w = 1 : width
+            	R_flip(h, w) =R(h, width-w+1);
+            	G_flip(h, w) =G(h, width-w+1);
+            	B_flip(h, w) =B(h, width-w+1);
+       	end
     end
 		```
 	* Before return the image, we must convert the double type image content to the range of 0~1 so that imshow can display it properly:
@@ -109,16 +109,16 @@ B(:,:) = I(:,:,3);
     y2 = ceil(y_old);
 			```
 			```
-		if x1==x2
-      wa =1;
-    else
-      wa = (x_old - x1)/(x2-x1);
-    end
-    if y1==y2
-      wb = 1;
-    else
-      wb = (y_old - y2)/(y2-y1);
-    end
+			if x1==x2
+      		wa =1;
+    	else
+      		wa = (x_old - x1)/(x2-x1);
+    	end
+    	if y1==y2
+      		wb = 1;
+    	else
+      		wb = (y_old - y2)/(y2-y1);
+    	end
 			```
  			```
 			%calculate weight w1, w2 w3, w4 for 4 neighbor pixels.
@@ -153,8 +153,8 @@ B(:,:) = I(:,:,3);
 		<th>Gray scale image</th>
 	</tr>
 	<tr>
-		<th><img src="../image.jpg" width=300/></th>
-		<th><img src="../results/gray_scale.jpg" width=300/></th>
+		<th><img src="../image.jpg" width=500/></th>
+		<th><img src="../results/gray_scale.jpg" width=500/></th>
 	</tr>
 
 <table border=1>
@@ -163,16 +163,16 @@ B(:,:) = I(:,:,3);
 		<th>Horizontally flipped image</th>
 	</tr>
 	<tr>
- 		<th><img src="../image.jpg" width=300/></th>
-		<th><img src="../results/flip_0.jpg" width=300/></th>
+ 		<th><img src="../image.jpg" width=500/></th>
+		<th><img src="../results/flip_0.jpg" width=500/></th>
 	</tr>
 	<tr>
  		<th>Vertically flipped image</th>
 		<th>Both direction flipped image</th>
 	</tr>
 	<tr>
- 		<th><img src="../results/flip_1.jpg" width=300/></th>
-		<th><img src="../results/flip_2.jpg" width=300/></th>
+ 		<th><img src="../results/flip_1.jpg" width=500/></th>
+		<th><img src="../results/flip_2.jpg" width=500/></th>
 	</tr>
 
 <table border=1>
@@ -181,7 +181,6 @@ B(:,:) = I(:,:,3);
 		<th>Rotated image</th>
 	</tr>
 	<tr>
-		<th><img src="../image.jpg" width=300/></th>
-		<th><img src="../results/rotate.jpg" width=300/></th>
+		<th><img src="../image.jpg" width=500/></th>
+		<th><img src="../results/rotate.jpg" width=500/></th>
 	</tr>
-	
