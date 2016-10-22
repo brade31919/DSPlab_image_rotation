@@ -3,7 +3,7 @@ clear;
 clc;
 
 %% read image
-filename = 'image.jpg';
+filename = 'image3.jpg';
 I = imread(filename);
 figure('name', 'source image');
 imshow(I);
@@ -20,7 +20,7 @@ I3 = flip(I,0);
 I3_2 = flip(I,1);
 I3_3 = flip(I,2);
 % rotation function
-I4 = rotation(I, pi/3);
+I4 = rotation(I, pi/5);
 figure
 imshow(I4);
 
@@ -30,11 +30,11 @@ imshow(I2);
 
 %% write image
 % save image for your report
-filename2 = './results/gray_scale.jpg';
-filename3 = './results/flip_0.jpg';
-filename4 = './results/flip_1.jpg';
-filename5 = './results/flip_2.jpg';
-filename6 = './results/rotate.jpg';
+filename2 = './results/gray_scale3.jpg';
+filename3 = './results/flip3_0.jpg';
+filename4 = './results/flip3_1.jpg';
+filename5 = './results/flip3_2.jpg';
+filename6 = './results/rotate3.jpg';
 imwrite(I2, filename2);
 imwrite(I3, filename3);
 imwrite(I3_2, filename4);

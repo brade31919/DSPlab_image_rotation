@@ -185,3 +185,80 @@ B(:,:) = I(:,:,3);
 		<th><img src="../image.jpg" width=500/></th>
 		<th><img src="../results/rotate.jpg" width=500/></th>
 	</tr>
+
+
+<table border=1>
+ 	<tr>
+ 		<th>Input image</th>
+		<th>Gray scale image</th>
+	</tr>
+	<tr>
+		<th><img src="../image2.jpg" width=500/></th>
+		<th><img src="../results/gray_scale2.jpg" width=500/></th>
+	</tr>
+
+<table border=1>
+	<tr>
+		<th>Input image</th>
+		<th>Horizontally flipped image</th>
+	</tr>
+	<tr>
+ 		<th><img src="../image2.jpg" width=500/></th>
+		<th><img src="../results/flip2_0.jpg" width=500/></th>
+	</tr>
+	<tr>
+ 		<th>Vertically flipped image</th>
+		<th>Both direction flipped image</th>
+	</tr>
+	<tr>
+ 		<th><img src="../results/flip2_1.jpg" width=500/></th>
+		<th><img src="../results/flip2_2.jpg" width=500/></th>
+	</tr>
+
+<table border=1>
+	<tr>
+		<th>Input image</th>
+		<th>Rotated image</th>
+	</tr>
+	<tr>
+		<th><img src="../image2.jpg" width=500/></th>
+		<th><img src="../results/rotate2.jpg" width=500/></th>
+	</tr>
+
+<table border=1>
+ 	<tr>
+ 		<th>Input image</th>
+		<th>Gray scale image</th>
+	</tr>
+	<tr>
+		<th><img src="../image3.jpg" width=500/></th>
+		<th><img src="../results/gray_scale3.jpg" width=500/></th>
+	</tr>
+
+<table border=1>
+	<tr>
+		<th>Input image</th>
+		<th>Horizontally flipped image</th>
+	</tr>
+	<tr>
+ 		<th><img src="../image3.jpg" width=500/></th>
+		<th><img src="../results/flip3_0.jpg" width=500/></th>
+	</tr>
+	<tr>
+ 		<th>Vertically flipped image</th>
+		<th>Both direction flipped image</th>
+	</tr>
+	<tr>
+ 		<th><img src="../results/flip3_1.jpg" width=500/></th>
+		<th><img src="../results/flip3_2.jpg" width=500/></th>
+	</tr>
+
+<table border=1>
+	<tr>
+		<th>Input image</th>
+		<th>Rotated image</th>
+	</tr>
+	<tr>
+		<th><img src="../image3.jpg" width=500/></th>
+		<th><img src="../results/rotate3.jpg" width=500/></th>
+	</tr>
