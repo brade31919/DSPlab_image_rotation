@@ -36,19 +36,19 @@
 	* According to the input type, we should implement three different flipping type (horizontally, vertically and both). Take type==0 as example, We first declare the output image:
 		```
 		R_flip = zeros(height,width);
-    G_flip = zeros(height,width);
-    B_flip = zeros(height,width);
+    	G_flip = zeros(height,width);
+   	B_flip = zeros(height,width);
 		```
 
 	* Then, we iterate through the whole image and assign each pixel to the correct location:
 		```
-		for h = 1 : height
-       	for w = 1 : width
-            	R_flip(h, w) =R(h, width-w+1);
-            	G_flip(h, w) =G(h, width-w+1);
-            	B_flip(h, w) =B(h, width-w+1);
-       	end
-    end
+	for h = 1 : height
+       		for w = 1 : width
+            		R_flip(h, w) =R(h, width-w+1);
+            		G_flip(h, w) =G(h, width-w+1);
+            		B_flip(h, w) =B(h, width-w+1);
+       		end
+    	end
 		```
 	* Before return the image, we must convert the double type image content to the range of 0~1 so that imshow can display it properly:
 		```
@@ -104,32 +104,33 @@ B(:,:) = I(:,:,3);
 
 			```
 		x1 = floor(x_old);
-    x2 = ceil(x_old);
-    y1 = floor(y_old);
-    y2 = ceil(y_old);
+   	 	x2 = ceil(x_old);
+    		y1 = floor(y_old);
+    		y2 = ceil(y_old);
 			```
+
 			```
-			if x1==x2
-      		wa =1;
+		if x1==x2
+      			wa =1;
     	else
-      		wa = (x_old - x1)/(x2-x1);
+      			wa = (x_old - x1)/(x2-x1);
     	end
     	if y1==y2
-      		wb = 1;
+      			wb = 1;
     	else
-      		wb = (y_old - y2)/(y2-y1);
+      			wb = (y_old - y2)/(y2-y1);
     	end
 			```
  			```
 			%calculate weight w1, w2 w3, w4 for 4 neighbor pixels.
-    w1 = (1-wa)*(1-wb);
-    w2 = wa*(1-wb);
-    w3 = wa*wb;
-    w4 = (1-wa)*wb;
+    	w1 = (1-wa)*(1-wb);
+    	w2 = wa*(1-wb);
+    	w3 = wa*wb;
+    	w4 = (1-wa)*wb;
 		%calculate r,g,b with 4 neighbor point and their weight
-    r=R(y1,x1)*w1 + R(y2,x1)*w2 + R(y1,x2)*w3 + R(y2,x2)*w4;
-    g=G(y1,x1)*w1 + G(y2,x1)*w2 + G(y1,x2)*w3 + G(y2,x2)*w4;
-    b=B(y1,x1)*w1 + B(y2,x1)*w2 + B(y1,x2)*w3 + B(y2,x2)*w4;
+    	r=R(y1,x1)*w1 + R(y2,x1)*w2 + R(y1,x2)*w3 + R(y2,x2)*w4;
+    	g=G(y1,x1)*w1 + G(y2,x1)*w2 + G(y1,x2)*w3 + G(y2,x2)*w4;
+    	b=B(y1,x1)*w1 + B(y2,x1)*w2 + B(y1,x2)*w3 + B(y2,x2)*w4;
 			```
 
 ## Installation
