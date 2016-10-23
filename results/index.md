@@ -1,4 +1,4 @@
-# Your Name <span style="color:red">(102061148)</span>
+# 林沅廷 <span style="color:red">(102061148)</span>
 
 # Project 1 / Image Filtering and Hybrid Images
 
